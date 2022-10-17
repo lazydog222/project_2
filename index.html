@@ -1,0 +1,109 @@
+<!-- The code in this HTML file was based off of Jeff's video on bootstrap! 
+    Here is the link: https://www.youtube.com/watch?v=6Df6xbs5m8A&ab_channel=JeffHuang -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Web Page Redesign</title>
+</head>
+<body>
+    <nav class="navbar navbar-light navbar-custom navbar-expand-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Project Gutenberg Redesign</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="navbar-item"><a href="#Original Web Page" class="nav-link">Original Web Page</a></li>
+                    <li class="navbar-item"><a href="#Usability and Accessibility Problems" class="nav-link">Usability and Accessibility Problems</a></li>
+                    <li class="navbar-item"><a href="#Wireframes" class="nav-link">Wireframes</a></li>
+                    <li class="navbar-item"><a href="#Visual Style Guide" class="nav-link">Visual Style Guide</a></li>
+                    <li class="navbar-item"><a href="#Hi-Fi Prototypes" class="nav-link">Hi-Fi Prototypes</a></li>
+                    <li class="navbar-item"><a href="#Responsive Web Page" class="nav-link">Responsive Web Page</a></li>
+                </ul>
+            </div>
+        </div>    
+    </nav>
+    <div class = "d-flex flex-column blankets justify-content-center align-items-center">
+        <h1 class="text-dark display-2">Project Gutenberg</h1>
+        <h2>Web Page Redesign</p>
+    </div> 
+    <div id = "Original Web Page" class = "container border-bottom">
+        <h4 class = "pt-3">Original Web Page</h4> 
+        <a href = "https://www.gutenberg.org/ebooks/145"><img src = "./images/Web Page.png" class = "mb-3 shadow border-dark rounded w-50"></a>
+        <p class = "lead"> I chose <a href = "https://www.gutenberg.org/ebooks/145">this</a> web page, Project Gutenberg’s link to George Eliot’s Middlemarch, for two reasons.  
+            First, I am currently reading the book and visit this page a lot to access the HTML text.  Second, I 
+            believe Project Gutenberg’s mission of breaking down barriers for reading great works of literature is 
+            important.  The whole website is run by volunteers, who type up and translate texts.  The founder, 
+            Michael Hart, explains that the volunteer model has a “lack of a need for perfectionism” and has always 
+            been a “work in progress.”  He believes that there are many “different right ways” to do something, and 
+            I find this to be true.  In my redesign of the webpage I want to hold onto this spirit of flexibility 
+            and anti-perfectionism.  There is no final perfected interface for Project Gutenberg - it will always 
+            be a work in progress that is never set in stone.   </p>
+    </div>
+    <div id = "Usability and Accessibility Problems" class = "container border-bottom">
+        <h4 class = "pt-3">Usability and Accessibility Problems</h4> 
+        <p class = "lead"> The web page has a lot of positive attributes - it is minimally designed without 
+            unnecessary information and contains different options for users with varying file needs.  
+            I hope to improve upon the learnability of the web page.  The different E-Book file types are 
+            listed in a table with underlined links; this does not make it clear to the user that clicking 
+            on the link starts a download.  Furthermore, the user is not aware when the download is finished; 
+            the file is simply saved to the computer and has no direct feedback on the page.  Beyond this, I 
+            hope to remove the table organization system, as it displays the information inefficiently with 
+            several repeated icons.  Using a drop down menu will be more concise and will better resemble 
+            the real world feeling of browsing a library shelf. <br><br> Taking this all into account, I hope to complete the following items:
+            <br> <b>1. Replace the download links in the table with a dropdown menu and a download button.
+            <br> 2. Use a more concise and aesthetically pleasing visual form other than the table.
+            <br> 3. Replace links to related books with carousels of book covers. </b>
+            <br>
+            <br>Using the website accessibility checker I found two more problems that I wish to resolve:<br>
+            <b>1. The “Go” button on the search bar has too low contrast.
+            <br>2. Some of the table headers have no icons or text.</b><br>  
+            </p>
+    </div>
+    <div id = "Wireframes" class = "container border-bottom">
+        <h4 class = "pt-3">Wireframes</h4> 
+        <p class = "lead"> Below are the wireframes I designed to address the usability problems mentioned above.</p>
+        <div class = "row">
+            <div>
+                <img src = "images/Project G Wireframes/New Wireframe 1.png" class = "rounded shadow w-50 p-5 m-2">
+            </div>
+            <div>
+                <img src = "images/Project G Wireframes/New Wireframe 2.png" class = "rounded shadow w-50 p-5 m-2">
+            </div>
+            <div>
+                <img src = "images/Project G Wireframes/New Wireframe 3.png" class = "rounded shadow w-50 p-5 m-2">
+            </div>
+        </div>
+    </div>
+    <div id = "Visual Style Guide" class = "container border-bottom">
+        <h4 class = "pt-3">Visual Style Guide</h4> 
+        <p class = "lead"> Below is the visual style guide I assembled before making the hi-fi prototypes.</p>
+        <img src = "images/Style.png" class = "rounded shadow w-50 img-responseive p-5 m-2">
+    </div>
+    <div id = "Hi-Fi Prototypes" class = "container border-bottom">
+        <h4 class = "pt-3">Hi-Fi Prototypes</h4> 
+        <p class = "lead"> Below are the hi-fi prototypes I designed using the visual style guide and the wireframes. </p>
+        <div class = "row">
+            <div>
+                <img src = "images/One.png" class = "rounded shadow w-50 p-2 m-2">
+            </div>
+            <div>
+                <img src = "images/Two.png" class = "rounded shadow w-50 p-2 m-2">
+            </div>
+            <div>
+                <img src = "images/Three.png" class = "rounded shadow w-50 p-2 m-2">
+            </div>
+        </div>
+    </div>
+    <div id = "Responsive Web Page" class = "container border-bottom">
+        <h4 class = "pt-3">Responsive Web Page</h4> 
+        <p class = "lead">Using Bootstrap, I built a new interface for the Project Gutenberg web page, addressing 
+            usability and accessibility problems.  <br> <b>Click on the image to open the web page!</b></p>
+        <a href = "https://lazydog222.github.io/Redesign/">
+        <img src = "images/Final.png" class = "w-50 shadow rounded mb-5"></a>
+    </div>
+</body>
+</html>
